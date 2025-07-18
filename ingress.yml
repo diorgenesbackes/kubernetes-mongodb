@@ -1,0 +1,20 @@
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata: 
+#   name: tls-ingress
+# spec: 
+#   rules: 
+#     - 
+#       host: 10.253.135.62:27017
+#       http: 
+#         paths: 
+#           - 
+#             backend: 
+#               serviceName: my-service
+#               servicePort: 80
+#             path: /
+#   tls: 
+#     - 
+#       hosts: 
+#         - 10.253.135.62:27017
+#       secretName: mongo-tls
